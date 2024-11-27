@@ -71,9 +71,9 @@ main() {
   setup_base
   install_ohmyzsh
   install_tools
+  set_default_shell
   yazi_config
   zsh_configs
-  set_default_shell
 
   echo "Installation complete! Please log out and log back in to start using zsh."
 }
