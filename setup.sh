@@ -39,7 +39,7 @@ install_tools() {
 
   sudo mkdir -p /usr/local/bin
   sudo mv yazi-x86_64-unknown-linux-gnu/{ya,yazi} /usr/local/bin/
-  sudo chmod +x /usr/local/bin/{yz,yazi}
+  sudo chmod +x /usr/local/bin/{ya,yazi}
 
   curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /etc/apt/keyrings/wezterm-fury.gpg
   echo 'deb [signed-by=/etc/apt/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
@@ -84,3 +84,4 @@ main() {
   echo "Installation complete! Please log out and log back in to start using zsh."
 }
 main
+
