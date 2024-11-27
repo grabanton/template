@@ -172,5 +172,4 @@ main() {
 
   echo "Installation complete! Please log out and log back in to start using zsh."
 }
-
 main
