@@ -49,7 +49,7 @@ install_tools() {
 }
 
 yazi_config() {
-  mkdri -p ~/.config
+  mkdir -p ~/.config
   mv yazi/ ~/.config/yazi/
   /usr/local/bin/ya pack -a yazi-rs/plugins:git
   /usr/local/bin/ya pack -a yazi-rs/plugins:diff
@@ -84,4 +84,3 @@ main() {
   echo "Installation complete! Please log out and log back in to start using zsh."
 }
 main
-
