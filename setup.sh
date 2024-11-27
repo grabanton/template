@@ -25,6 +25,9 @@ install_tools() {
 
   sudo apt install -y ffmpeg ripgrep jq fd-find
 
+  # zoxide
+  curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
   # yazi
   LATEST_VERSION=$(curl -s https://api.github.com/repos/sxyazi/yazi/releases/latest | grep -o '"tag_name": ".*"' | cut -d'"' -f4)
 
@@ -38,6 +41,11 @@ install_tools() {
   sudo mv yazi-x86_64-unknown-linux-gnu/{ya,yazi} /usr/local/bin/
   sudo chmod +x /usr/local/bin/{yz,yazi}
 
+  curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /etc/apt/keyrings/wezterm-fury.gpg
+  echo 'deb [signed-by=/etc/apt/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
+
+  sudo apt update
+  sudo apt install -y wezterm
 }
 
 yazi_config() {
