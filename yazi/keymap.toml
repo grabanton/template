@@ -1,0 +1,60 @@
+[[manager.prepend_keymap]]
+on   = "f"
+run  = "plugin jump-to-char"
+desc = "Jump to char"
+
+[[manager.prepend_keymap]]
+on   = "F"
+run  = "plugin smart-filter"
+desc = "Smart Filter"
+
+[[manager.prepend_keymap]]
+desc = "Start bunny.yazi"
+on = "'"
+run = "plugin bunny"
+
+[[manager.prepend_keymap]]
+on   = "<C-d>"
+run  = "plugin diff"
+desc = "Diff the selected with the hovered file"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "l" ]
+run  = "plugin lazygit"
+desc = "run lazygit"
+
+[[manager.prepend_keymap]]
+on = "Y"
+run = ["plugin system-clipboard"]
+desc = "Copy To system Clipboard"
+
+[[manager.prepend_keymap]]
+on   = "R"
+run  = "plugin open-with-cmd --args=block"
+desc = "Run command in the terminal"
+
+[[manager.prepend_keymap]]
+on   = "b"
+run  = "plugin --sync hide-preview"
+desc = "Hide or show preview"
+
+[[manager.prepend_keymap]]
+on   = "B"
+run  = "plugin --sync max-preview"
+desc = "Maximize or restore preview"
+
+[[manager.prepend_keymap]]
+on   = [ "T" ]
+run  = "plugin eza-preview"
+desc = "Toggle List/Tree Preview"
+
+[[manager.prepend_keymap]]
+on   = [ "c", "p" ]
+run  = "plugin command"
+desc = "Yazi command prompt"
+
+[[manager.prepend_keymap]]
+on = "u"
+run = "plugin restore"
+desc = "Restore last deleted files/folders" 
+
