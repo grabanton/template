@@ -37,7 +37,7 @@ install_tools() {
   unzip yazi-x86_64-unknown-linux-gnu.zip
 
   sudo mkdir -p /usr/local/bin
-  sudo mv yazi-x86_64-unknown-linux-gnu.zip/{ya,yazi} /usr/local/bin/
+  sudo mv yazi-x86_64-unknown-linux-gnu/{ya,yazi} /usr/local/bin/
   sudo chmod +x /usr/local/bin/{yz,yazi}
 
 }
