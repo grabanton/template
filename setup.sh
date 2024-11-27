@@ -60,7 +60,6 @@ yazi_config() {
 zsh_configs() {
   echo "Setting up configurations..."
   cp ~/.template/zshrc ~/.zshrc
-  source ~/.zshrc
 }
 
 set_default_shell() {
