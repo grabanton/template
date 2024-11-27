@@ -25,7 +25,7 @@ install_tools() {
 
   sudo apt install -y ffmpeg ripgrep jq fd-find
   # zoxide
-  sh -c "$(curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh)" "" --unattended
+  curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 
   # yazi
   LATEST_VERSION=$(curl -s https://api.github.com/repos/sxyazi/yazi/releases/latest | grep -o '"tag_name": ".*"' | cut -d'"' -f4)
