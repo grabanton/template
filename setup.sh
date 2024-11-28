@@ -99,6 +99,7 @@ main() {
   set_default_shell
   yazi_config
   zsh_configs
+  intall_font
 
   echo "Installation complete! Please log out and log back in to start using zsh."
 }
