@@ -16,6 +16,25 @@ install_ohmyzsh() {
   git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
 }
 
+intall_font() {
+  echo "Installing JetbrainsMono Nerd Font..."
+
+  mkdir -p ~/.local/share/fonts
+
+  TEMP_DIR=$(mktemp -d)
+  cd "$TEMP_DIR"
+
+  curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip
+  unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono
+
+  fc-cache -f -v
+
+  cd
+  rm -rf "$TEMP_DIR"
+
+  echo "JetbrainsMono Nerd Font installed successfully"
+}
+
 install_tools() {
   echo "Installing additional tools..."
 
@@ -50,7 +69,7 @@ install_tools() {
 
 yazi_config() {
   mkdir -p ~/.config
-  mv yazi/ ~/.config/yazi/
+  mv ~/.template/yazi/ ~/.config/yazi/
   /usr/local/bin/ya pack -a yazi-rs/plugins:git
   /usr/local/bin/ya pack -a yazi-rs/plugins:diff
   /usr/local/bin/ya pack -a yazi-rs/plugins:full-border
