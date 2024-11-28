@@ -69,7 +69,7 @@ install_tools() {
 
 yazi_config() {
   mkdir -p ~/.config
-  mv ~/.template/yazi/ ~/.config/yazi/
+  mv ~/.template/yazi ~/.config/
   /usr/local/bin/ya pack -a yazi-rs/plugins:git
   /usr/local/bin/ya pack -a yazi-rs/plugins:diff
   /usr/local/bin/ya pack -a yazi-rs/plugins:full-border
