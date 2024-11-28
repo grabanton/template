@@ -79,7 +79,7 @@ yazi_config() {
   /usr/local/bin/ya pack -a stelcodes/bunny
   /usr/local/bin/ya pack -a Lil-Dank/lazygit
 
-  git clone https://github.com/yazi-rs/flavors.git ~/.config/yazi/
+  git clone https://github.com/yazi-rs/flavors.git ~/.config/yazi/flavors
 }
 
 zsh_configs() {
