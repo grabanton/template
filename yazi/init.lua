@@ -12,9 +12,3 @@ require("bunny"):setup({
 	},
 	notify = false,
 })
-
-require("copy-file-contents"):setup({
-	clipboard_cmd = "default",
-	append_char = "\n",
-	notification = true,
-})

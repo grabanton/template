@@ -42,7 +42,7 @@ install_tools() {
   git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
   ~/.fzf/install -all
 
-  sudo apt install -y ffmpeg ripgrep jq fd-find
+  sudo apt install -y ripgrep jq fd-find
 
   # zoxide
   curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
